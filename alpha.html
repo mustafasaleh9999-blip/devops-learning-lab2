@@ -1,26 +1,13 @@
-<!-- The hidden HTML template -->
-<template id="user-template">
-  <div class="user-card">
-    <h2 class="user-name"></h2>
-    <p class="user-email"></p>
-  </div>
-</template>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>Welcome to your first web page.</p>
+</body>
+</html>
 
-<!-- Where the template will be inserted -->
-<div id="user-container"></div>
-
-<script>
-  // 1. Get template and container
-  const template = document.getElementById('user-template');
-  const container = document.getElementById('user-container');
-
-  // 2. Clone template content
-  const clone = document.importNode(template.content, true);
-
-  // 3. Populate data
-  clone.querySelector('.user-name').textContent = 'John Doe';
-  clone.querySelector('.user-email').textContent = 'john@example.com';
-
-  // 4. Append to the DOM
-  container.appendChild(clone);
-</script>
