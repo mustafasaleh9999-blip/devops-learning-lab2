@@ -1,0 +1,3 @@
+This is my Fetch and Merge Lab.
+
+Learning Git step by step.
